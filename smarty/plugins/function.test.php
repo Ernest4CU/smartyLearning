@@ -1,11 +1,8 @@
 <?php
-	function smarty_function_test($params){
-		print_r($params);
-		exit;
-		/*
+	function smarty_function_test($params){		
 		$width = $params['width'];
 		$height = $params['height'];
-		$area = $width*$height;*/
+		$area = $width*$height;
 		return $area;
 	}
 ?>
