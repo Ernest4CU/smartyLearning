@@ -1,1 +1,1 @@
-{$myobj->meth1(array('小明','吃了'))}
+{"Y-m-d"|date:$time}

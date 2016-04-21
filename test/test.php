@@ -19,7 +19,7 @@
 		}
 	}
 	$myobj = new My_Object();
-	$smarty->assign('myobj',$myobj);//变量赋值
+	$smarty->assign('time',time());//变量赋值
 	$smarty->display('test.tpl');
 	
 ?>
