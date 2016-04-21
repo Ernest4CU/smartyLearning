@@ -1,1 +1,1 @@
-{$arr|date_format:"%B %e %Y %H:%M:%S"}
+{include file="header.tpl" sitename="我的网站"}
