@@ -13,8 +13,13 @@
 	$smarty->caching = true;//开启缓存
 	$smarty->cache_lifetime = 120;
 	
-	
-	$smarty->assign('str','abcdefg');//变量赋值
+	function test($params){
+		$p1=$params['p1'];
+		$p2=$params['p2'];
+		return '传入的参数1值为：'.$p1.'，传入的参数2值为：'.$p2.'。';
+	}
+	$smarty->registerPlugin('function','f_test','test');
+	//$smarty->assign('str','abcdefg');//变量赋值
 	$smarty->display('test.tpl');
 	
 ?>
