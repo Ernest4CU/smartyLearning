@@ -1,1 +1,1 @@
-{include file="header.tpl" sitename="我的网站"}
+{$myobj->meth1(array('小明','吃了'))}

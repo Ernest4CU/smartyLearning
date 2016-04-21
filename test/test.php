@@ -13,8 +13,13 @@
 	$smarty->caching = true;//开启缓存
 	$smarty->cache_lifetime = 120;
 	
-
-	$smarty->assign('arr',time());//变量赋值
+	class My_Object{
+		function meth1($params){
+			return $params[0].'已经'.$params[1];
+		}
+	}
+	$myobj = new My_Object();
+	$smarty->assign('myobj',$myobj);//变量赋值
 	$smarty->display('test.tpl');
 	
 ?>
