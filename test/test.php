@@ -13,8 +13,8 @@
 	$smarty->caching = true;//开启缓存
 	$smarty->cache_lifetime = 0;
 	
-	
-	$smarty->assign('time',time());//变量赋值
-	$smarty->display('time.tpl');
+	$showstr='Hello world。This is a test。';
+	$smarty->assign('showstr',$showstr);//变量赋值
+	$smarty->display('showStr.tpl');
 	
 ?>
