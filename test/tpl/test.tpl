@@ -1,1 +1,1 @@
-{"Y-m-d"|date:$time}
+{'d'|str_replace:'h':$str}
