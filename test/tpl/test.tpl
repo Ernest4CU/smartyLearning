@@ -1,1 +1,1 @@
-{$articletitle}
+{$arr|date_format:"%B %e %Y %H:%M:%S"}

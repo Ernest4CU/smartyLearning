@@ -13,8 +13,9 @@
 	$smarty->caching = true;//开启缓存
 	$smarty->cache_lifetime = 120;
 	
-	//smarty两方法
-	$smarty->assign('articletitle','文章标题');//变量赋值
+
+	time
+	$smarty->assign('arr',time());//变量赋值
 	$smarty->display('test.tpl');
 	
 ?>
