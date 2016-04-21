@@ -14,7 +14,7 @@
 	$smarty->cache_lifetime = 0;
 	
 	
-	$smarty->assign('conf',array('width'=>66,'height'=>2));//变量赋值
-	$smarty->display('area.tpl');
+	$smarty->assign('time',time());//变量赋值
+	$smarty->display('time.tpl');
 	
 ?>
