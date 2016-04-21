@@ -11,15 +11,10 @@
 	$smarty->cache_dir="cache";//缓存
 	//以下是开启缓存的另两个配置。因为通常不用smarty的缓存机制，所以此项为了解
 	$smarty->caching = true;//开启缓存
-	$smarty->cache_lifetime = 120;
+	$smarty->cache_lifetime = 0;
 	
-	function test($params){
-		$p1=$params['p1'];
-		$p2=$params['p2'];
-		return '传入的参数1值为：'.$p1.'，传入的参数2值为：'.$p2.'。';
-	}
-	$smarty->registerPlugin('function','f_test','test');
-	//$smarty->assign('str','abcdefg');//变量赋值
-	$smarty->display('test.tpl');
+	
+	$smarty->assign('conf',array('width'=>52,'height'=>2));//变量赋值
+	$smarty->display('area.tpl');
 	
 ?>
